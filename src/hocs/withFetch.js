@@ -48,9 +48,9 @@ const withFetch = Component => ({apiUrl, ...rest}) => {
 		fetchData();
 	}, [apiUrl])
 
-	if(state.error) return <h3>{state.error}</h3>
+	if(state.error) return <h3 className='message'>{state.error}</h3>
 
-	if(state.isLoading) return <h3>Fetching Data...</h3>
+	if(state.isLoading) return <h3 className='message'>Fetching Data...</h3>
 
 	return (
 		<Component

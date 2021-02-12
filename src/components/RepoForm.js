@@ -13,15 +13,17 @@ function RepoForm(props) {
 	}
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<label htmlFor='repo'>Repository Name</label>
+		<form className='search-form' onSubmit={handleSubmit}>
+			<label className='search-label' htmlFor='repo'>Repository Name</label>
 			<input
+				className='search-input'
 				id='repo'
 				type='text'
 				autoComplete='off'
+				placeholder='Name'
 				value={value}
 				onChange={e => setValue(e.target.value)}/>
-			<button>Search</button>
+			<button className='btn'>Search</button>
 		</form>
 	)
 }

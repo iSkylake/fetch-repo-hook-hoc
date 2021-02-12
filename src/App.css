@@ -1,3 +1,75 @@
 .App {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	justify-items: center;
+  align-items: start;
+  padding-top: 2rem;
+	height: 100%;
+	background-color: #131c29;
+}
 
+.title {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+	color: #fff;
+}
+
+.content {
+  font-size: 0.9rem;
+	color: rgba(225,235,245,.6);
+}
+
+.repo-ctn {
+  background-color: #24344d;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.search-form {
+	box-sizing: border-box;
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  color:  #fff;
+}
+
+.search-input {
+  padding:  0.2rem 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #d6d6d6;
+  background-color: #24344d;
+  border: 1px solid #324462;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+	padding: 0.2rem 0.5rem;
+  color: #fff;
+  background-color: #2ec5d3;
+  border-color: #2ec5d3;
+  border-radius: 2px;
+  border: none;
+  transition: 0.2s background-color;
+}
+
+.btn:hover {
+	background-color: #29b3c0;
+}
+
+.list-item {
+  padding:  0.8rem 0;
+  border-bottom: 1px solid #2e3f5b;
+}
+
+.message {
+	color: #fff;
+	padding: 1rem 0;
+	font-size: 0.9rem;
 }
