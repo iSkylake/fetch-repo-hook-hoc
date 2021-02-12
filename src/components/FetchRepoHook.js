@@ -13,8 +13,8 @@ function FetchRepoHook() {
 	} = useFetch(`https://api.github.com/search/repositories?q=${repoName}&per_page=10`);
 
 	return (
-		<div>
-			<h1>Fetch Repo Hook</h1>
+		<div className='repo-ctn'>
+			<h1 className='title'>Fetch Repo Hook</h1>
 			<RepoForm onSetRepoName={setRepoName}/>
 			<RepoList isLoading={isLoading} data={repos} error={error}/>
 		</div>
