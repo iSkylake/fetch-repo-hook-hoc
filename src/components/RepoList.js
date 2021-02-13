@@ -9,7 +9,11 @@ function RepoList(props) {
 		<ul>
 			{
 				repos.map(repo => (
-					<li className='content list-item' key={repo.id}>{repo.full_name}</li>
+					<li className='content list-item' key={repo.id}>
+						<a href={repo.html_url} target='_blank' rel='noreferrer'>
+							{repo.full_name}
+						</a>
+					</li>
 				))
 			}
 		</ul>

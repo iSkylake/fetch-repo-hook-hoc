@@ -1,16 +1,16 @@
 .App {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	justify-items: center;
-  align-items: start;
-  padding-top: 2rem;
-	height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 	background-color: #131c29;
+	box-sizing: border-box;
 }
 
 .title {
   padding-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
 	color: #fff;
 }
@@ -22,6 +22,7 @@
 
 .repo-ctn {
   background-color: #24344d;
+  margin: 0 2rem 1rem 2rem;
   padding: 1rem;
   padding-bottom: 0;
 }
@@ -38,7 +39,7 @@
 }
 
 .search-input {
-  padding:  0.2rem 0.5rem;
+  padding:  0.25rem 0.6rem;
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 0.9rem;
